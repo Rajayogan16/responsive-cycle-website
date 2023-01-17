@@ -1,0 +1,860 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-padding-top: 5rem;
+}
+
+/*header starts*/
+.container {
+    
+    background: linear-gradient(to right,white 0%,white 30%,#274d5a 30%,#274d5a 100% );
+    position: sticky;
+    top:0;
+    display:flex;
+    align-items: center;
+}
+
+.container > .logo {
+    flex: 1;  
+    line-height: 80px;
+    margin-top: 0px;
+    
+}
+.container > .nav{
+    flex: 9; 
+    justify-content: space-around;
+    line-height: 80px;
+    margin-right: 10px;
+}
+
+.logo img{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+/* toggle bar*/  
+
+#menu { 
+  
+    display: inline-flex;
+    justify-content:space-evenly;
+    width: 80%;   
+    margin-left: 100%;
+    transition: all 0.3s ease;
+  }
+  
+   #menu-toggle {
+    display: none;
+   }
+
+  #menu-toggle:checked ~ #menu {
+
+    margin-left: 20%;
+    
+  }
+ 
+  label{
+    position:absolute;
+    left: 97%;
+    cursor: pointer;
+    
+}
+
+.nav ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    word-spacing: 0px;
+}
+
+.nav ul li{
+    text-transform:capitALIZE;
+    font-size: 20px;
+    list-style-type: none;
+    color: white;
+    
+}
+
+main .home{
+    display:block;
+    height: fit-content;
+    width: 100%;
+    background: linear-gradient(to right,white 0%,white 30%,#274d5a 30%,#274d5a 100% );
+}  
+
+.card{
+    display: flex;
+    width: 80%;
+    height: fit-content;
+    margin:0 10% 0;
+    
+}
+
+
+.card1 > h4{
+    background-color: rgb(247, 193, 123);
+    height: 50px;
+    width: 90px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 42%; 
+    margin-top: 10%;
+    padding-top: 15px;
+    text-transform: capitalize;
+    font-size: large;
+    letter-spacing: 2px;
+}
+.card1{
+
+    flex: 5;
+    
+}
+
+.card2{
+    
+    flex:5;
+    text-align: left;
+    
+}
+.card1 > img
+{
+    height: 80%;
+    width: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 10%;
+    margin-top: 0%;
+}
+
+.card2 > h1{
+    margin-top: 30%;
+    text-transform: capitalize;
+    font-size: 45px;
+    width: 10%;
+   color: white;
+}
+
+.card2 > p{
+    margin-top: 5%;
+    font-size: large;
+    color: white;
+}
+
+.card2 > button{
+    margin-top: 5%;
+    margin-left: 30%;
+    width: 150px;
+    height: 40px;
+    background-color: rgb(247, 193, 123);
+    color: white;
+    font-size:large;
+    text-transform: capitalize;
+ }
+.card2 > .home-button{
+    margin-left: 0%;
+    margin-top: 10%;
+    width: 100%;
+}
+
+.home-button > button{
+    height: 40px;
+    width: 70px;
+    font-size: large;
+    background-color: rgb(247, 193, 123);
+    cursor: pointer;
+    float: right;
+}
+
+.cycle
+{
+    display: block;
+    height: fit-content;
+    width: 100%;
+    margin-top: 10%;
+
+}
+
+.cycle h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* our cycle logo*/
+
+.cycle p{
+    text-align: center;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 1%;
+}
+
+/*cycle container 1*/
+
+.cycle-container1{
+    width: 80%;
+    height: 70vh;
+    margin-top: 10%;
+    margin-right: 15%;
+    margin-left: 5%;
+    display: inline-flex;
+}
+
+.cycle-container1 > .cycle-card1{
+    flex: 4;
+    background-color: rgb(247, 193, 123);
+    
+}
+
+.cycle-container1 > .cycle-card2{
+    flex: 6;
+    
+}
+
+.cycle-card1 h5{
+    background-color: #325662;
+    width: fit-content;
+    font-size: 25px;
+    border-radius: 50px;
+    padding: 2px;
+    color: white;
+    margin-left: 50%;
+}
+
+.cycle-card1 img{
+    max-width: 100%;
+    margin-left: 1%;
+}
+
+.cycle-card2 hr{
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    display: inline-block;
+}
+
+.cycle-card2 h3{
+    width: 100%;
+    padding-left: 0%;
+    word-spacing: 200px;
+    font-size: 50px;
+    margin-top: 1%;
+}
+
+.cycle-card2 p{
+    text-align: left;
+    margin-top: 20%; 
+}
+
+.cycle-card2 button{
+    background-color: #325662;
+    font-size: 25px;
+    color: white;
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.cycle-card2 h5{
+    margin-top: 1%;
+    text-align:right;
+    font-size: 20px;
+    margin-right: 1%;
+    text-transform: capitalize;
+    word-spacing: 5px;
+}
+
+/*cycle container 2*/
+
+.cycle-container2{
+    width: 80%;
+    height: 65vh;
+    margin-top: 10%;
+    margin-left: 15%;
+    margin-right: 5%;
+    display: inline-flex;
+}
+
+.cycle-container2 > .cycle-card3{
+    flex: 6;    
+}
+
+.cycle-container2 > .cycle-card4{
+    flex: 4;
+    background-color:rgb(247, 193, 123);
+}
+
+.cycle-card4 h5{
+    background-color: #325662;
+    width: fit-content;
+    font-size: 25px;
+    border-radius: 50px;
+    padding: 2px;
+    color: white;
+    margin-left: 50%;
+}
+
+.cycle-card4 img{
+
+    max-width: 100%;
+}
+
+.cycle-card3 hr{
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    display: inline-block;
+}
+
+.cycle-card3 h3{
+    width: 100%;
+    padding-left: 0%;
+    word-spacing: 140px;
+    font-size: 50px;
+    margin-top: 1%;
+}
+
+.cycle-card3 p{
+    text-align: left;
+    margin-top: 16%; 
+}
+
+.cycle-card3 button{
+    background-color: #325662;
+    font-size: 25px;
+    color: white;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+
+.cycle-card3 h5{
+    margin-top: 1%;
+    text-align:right;
+    font-size: 20px;
+    margin-right: 1%;
+    text-transform: capitalize;
+    word-spacing: 5px;
+}
+
+/*cycle container 3*/
+
+.cycle-container3{
+    width: 80%;
+    height: 70vh;
+    margin-top: 10%;
+    margin-right: 15%;
+    margin-left: 5%;
+    display: inline-flex;
+}
+
+.cycle-container3 > .cycle-card5{
+    flex: 4;
+    background-color: rgb(247, 193, 123);
+    
+}
+
+.cycle-container3 > .cycle-card6{
+    flex: 6;
+    
+}
+
+.cycle-card5 h5{
+    background-color: #325662;
+    width: fit-content;
+    font-size: 25px;
+    border-radius: 50px;
+    padding: 2px;
+    color: white;
+    margin-left: 50%;
+}
+
+.cycle-card5 img{
+
+    max-width: 100%;
+
+}
+
+.cycle-card6 hr{
+    width: 50%;
+    height: 3px;
+    background-color: black;
+    display: inline-block;
+}
+
+.cycle-card6 h3{
+    width: 100%;
+    padding-left: 0%;
+    word-spacing: 140px;
+    font-size: 50px;
+    margin-top: 1%;
+}
+
+.cycle-card6 p{
+    text-align: left;
+    margin-top: 20%; 
+}
+
+.cycle-card6 button{
+    background-color: #325662;
+    font-size: 25px;
+    color: white;
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.cycle-card6 h5{
+    margin-top: 1%;
+    text-align:right;
+    font-size: 20px;
+    margin-right: 1%;
+    text-transform: capitalize;
+    word-spacing: 5px;
+}
+
+.read-button{
+    margin-left: 45%;
+    margin-top: 5%;
+    height: fit-content;
+    width:fit-content;
+    background-color: rgb(247, 193, 123);
+    color: white;
+    text-transform: capitalize;
+    padding: 10px;
+    font-size: x-large;
+}
+
+/*our cycle section ends*/
+
+/*about section starts*/
+
+.about{
+    margin-top: 5%;
+    height: 100vh;
+    width: 100%;
+    background-image: url(images/about-bg.png)
+
+      }
+
+.about h1{
+    padding-top: 3%;
+    text-align:center;
+    color: white;
+    font-size: 50px;
+    text-transform: capitalize;
+    font-family: verdana;
+}
+
+.about p{
+    margin-top: 1%;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: verdana;
+}
+
+.about > .abt-img{
+    background-color: #fff;
+    background-image: url(images/img-5.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 30%;
+    margin-top: 7%;
+    margin-left: 35%;
+    
+}
+
+.abt-img img{
+    height: fit-content;
+    width: fit-content;
+    max-width: 100%;
+}
+
+/*about section ends*/
+
+/*shop section starts*/
+
+.shop{
+    height: 90vh;
+    width: 100%;
+    
+}
+
+.shop h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: verdana;
+    text-transform: capitalize;
+    padding-top: 1%;
+}
+
+.shop > .shop-container{
+    display: inline-flex;
+    height: 311px;
+    box-shadow: 0 2px 4px;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+}
+
+.shop-container > .shopcard1{
+    flex: 2;
+    background-image: url(images/client-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 5px;
+    background-color: #fff;
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.shop-container > .shopcard2{
+    flex: 8;
+    margin-left: 5%;
+}
+
+.shopcard2 img{
+    margin-top: 7%;
+}
+
+.shopcard2 p{
+    margin-top: 5%;
+    font-size: larger;
+    
+}
+
+.shopcard2 h5{
+    margin-top: 5%;
+    font-size: larger;
+    text-transform: capitalize;
+    
+}
+
+.shop-button{
+    margin-top: 5%;
+    margin-left: 45%;
+    
+}
+
+.shop-button > button{
+    height: 40px;
+    width: 70px;
+    font-size: large;
+    background-color: rgb(247, 193, 123);
+    color: #fff;
+    cursor: pointer;
+}
+
+/*shop section ends*/
+
+/*news section starts*/
+
+.news{
+    height: fit-content;
+    width: 100%;
+    background-color:#274d5a ;
+}
+
+.news h1{
+    text-align: center;
+    font-size: 50px;
+    font-family: verdana;
+    text-transform: capitalize;
+    padding-top: 5%;
+    color: #fff;
+}
+
+.news p{
+    text-align: center;
+    font-size: 20px;
+    font-family: verdana;
+    text-transform: capitalize;
+    padding-top: 1%;
+    color: #fff;
+}
+
+.news > .news-container{
+    display: flex;
+    line-height: 1.6;
+    margin:6% 10%;
+    width: 80%;
+    height: 40%;
+    
+}
+
+.news-container > .newscard{
+    flex: 360px;  
+    background-color:white;
+    line-height: 120%;
+    margin: 10px;
+    padding: 0px;
+}
+    
+
+.newscard > img{
+    height: 50%;
+    width: 385px;
+}
+
+
+.newscard h3{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.newscard > .post{
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.post > span{
+    float: right;
+}
+
+.post p{
+    margin-top: 10px;
+    color: black;
+}
+
+.news > .input{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    height: fit-content;
+    margin-left: 30%;
+}
+
+.input > input,textarea
+{
+    margin-top: 5%;
+    border-radius: 10px;
+    height: 50px;
+}
+
+::placeholder{
+    text-align: left;
+    font-style:200px;
+}
+
+.input > button{
+   text-transform: uppercase;
+   font-size: large;
+   height: 100%;
+   width: 50%;
+   margin-top: 5%;
+   margin-left: 20%;
+   color: #fff;
+   background-color: rgb(247, 193, 123);
+   padding: 10px;
+   
+}
+
+.map
+{
+    margin-top: 10%;
+    width: 100%;
+    height: fit-content;
+    display: inline-flex;
+}
+
+.map > .map-details{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: auto;
+    
+} 
+
+.map-details > .con-details  {
+    margin-top: 2%;
+    margin-left: 5%;
+
+}
+.map-details > .con-details span{
+   color: #fff;
+   margin-left: 20px;
+   text-decoration: none;
+}
+.map-details > .con-img{
+    
+    margin: 3% 5% ;
+}
+
+.con-details > input{
+    width: 70%;
+}
+
+.map-details > button
+{
+  margin-top: 4%;
+  margin-left: 5%;
+  height: fit-content;
+  width: fit-content;
+  color: #fff;
+  background-color:rgb(247, 193, 123);
+  font-size:20px;
+  padding: 10px;
+}
+
+/*news section and main ends*/
+
+/*footer starts*/
+
+footer{
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: x-large;
+}
+
+/*media queries*/
+
+@media screen and (max-width:1000px),(max-width:800px),(max-width:600px)
+{
+ html{
+    overflow-x:hidden;
+    
+ }   
+}
+
+@media screen and (min-width:320px) and (max-width:480px)
+ {
+    body{
+        overflow-x: hidden;
+        font-size: 50%;
+       }
+
+
+       .container{
+        height: 100%;
+        position: sticky;
+        top:0%;
+        
+        
+       }
+       .logo {
+        position: absolute;
+        top: 0%;
+       }
+
+       label{
+        left: 90%;
+        top: 0%;
+        cursor: pointer;
+        background-color: #274d5a;
+        
+    }
+    
+
+       #menu { 
+        display:none;
+        justify-content:center;
+        width: 100%;   
+        transition: all 1s ease;
+      }
+      
+       #menu-toggle {
+        display: none;
+       }
+
+    
+    
+      #menu-toggle:checked ~ #menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0%;
+        margin-top: 30%;
+        background-color: #5a8290;
+      }
+     
+    .home{
+        
+        border: 2px solid black;
+        margin-top: 15vh;
+        
+    }
+
+    .cycle > .cycle-container1,.cycle-container2,.cycle-container3
+    {
+        height: 100%;
+        flex-wrap: wrap;
+        max-width: fit-content;
+    }
+
+    .cycle .read-button{
+        margin-left: 35%;
+    }
+
+    .news-container{
+        flex-wrap: wrap;
+    }
+    
+    .about
+    {
+        height:fit-content;
+    }
+
+    .about > .abt-img {
+       height: 10vh;
+       margin-bottom: 0px;
+    }
+
+    .shop{
+        height: fit-content;
+    }
+
+    .shop > .shop-container{
+        height: fit-content;
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+    .shop-container > .shopcard1{
+        background-size: contain;
+        background-position: center;
+        max-width: 100%;
+        
+    }
+    .shop-button{
+        margin-left: 35%;
+    }
+
+    .news > .news-container{
+        margin-left: 2%;
+    }
+
+    .post{
+        line-height: normal;
+        font-size: large;
+    }
+
+    .news > .input {
+        width: 90%;
+        margin-left: 5%;
+    }
+    
+
+    .input button{
+        margin-left: 25%;
+    }
+
+    .con-details a{
+        line-height: 2.5;
+    }
+    .con-details span{
+        font-size: 15px;
+    }
+}
